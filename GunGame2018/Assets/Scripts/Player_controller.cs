@@ -9,6 +9,7 @@ public class Player_controller : MonoBehaviour {
     private KeyCode left = KeyCode.A;
     private KeyCode jump = KeyCode.Space;
 
+    private bool canJump = false;
     private Rigidbody2D rb;
 
     public float horizontalSpeed = 0.1f;
@@ -35,12 +36,18 @@ public class Player_controller : MonoBehaviour {
 
         transform.position = new Vector2(x, y);
 
-        if (Input.GetKeyDown(jump))
+        if (Input.GetKeyDown(jump) && canJump)
         {
             rb.velocity = new Vector2(0, jumpSpeed);
+            canJump = false;
             //rb.AddForce(new Vector2(0, jumpSpeed) * Time.deltaTime * 1000);
         }
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        canJump = true;
     }
 
 }
