@@ -7,8 +7,8 @@ public class Bullet_controller : MonoBehaviour {
     public float speed;
     public float lifeTime;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         
     }
 	
@@ -22,7 +22,7 @@ public class Bullet_controller : MonoBehaviour {
         Destroy(gameObject, lifeTime);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
     }

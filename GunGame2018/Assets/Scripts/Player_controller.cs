@@ -12,41 +12,83 @@ public class Player_controller : MonoBehaviour {
     private bool canJump = false;
     private Rigidbody2D rb;
 
-    public float horizontalSpeed = 10f;
-    public float jumpSpeed = 0.1f;
+    public float horizontalAcceleration;
+    public float horizontalRetardation;
+    public float maxHorizontalSpeed;
+    public float minHorizontalSpeed;
+    public float minRunSpeed;
+    public float jumpSpeed;
+    public float animationFactor;
+    private float scale;
+    private bool facingRight = true;
+
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+
+    private Animator animator;
 
     // Use this for initialization
     void Start() {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        scale = transform.localScale.x;
+    }
+
+    void FixedUpdate()
+    {
+        canJump = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
     }
 
     // Update is called once per frame
     void Update() {
-        float x = 0;
 
-        if (Input.GetKey(right))
+        if (Input.GetKey(right) && rb.velocity.x < maxHorizontalSpeed)
         {
-            x = horizontalSpeed;
+            rb.AddForce(new Vector2(horizontalAcceleration, 0));
+            facingRight = true;
         }
-        if (Input.GetKey(left))
+        else if (Input.GetKey(left) && rb.velocity.x > -maxHorizontalSpeed)
         {
-            x =  -horizontalSpeed;
+            rb.AddForce(new Vector2(-horizontalAcceleration, 0));
+            facingRight = false;
+        }
+        else if (Mathf.Abs(rb.velocity.x) < minHorizontalSpeed)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+        else
+        {
+            rb.AddForce(new Vector2(-Mathf.Sign(rb.velocity.x) * horizontalRetardation, 0));
+        }
+            
+        if(Mathf.Abs(rb.velocity.x) < minRunSpeed)
+        {
+            animator.SetBool("moving", false);
+        }
+        else
+        {
+            animator.SetBool("moving", true);
+            animator.SetFloat("movingSpeed", Mathf.Abs(rb.velocity.x) * animationFactor);
         }
 
-        rb.velocity = new Vector2(x, rb.velocity.y);
+        if(!facingRight)
+        {
+            transform.localScale = new Vector3(scale, scale, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-scale, scale, 1);
+        }
+        
+
 
         if (Input.GetKeyDown(jump) && canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-            canJump = false;
             //rb.AddForce(new Vector2(0, jumpSpeed) * Time.deltaTime * 1000);
         }
 
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        canJump = true;
     }
 
 }
