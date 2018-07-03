@@ -10,6 +10,7 @@ public class Player_controller : MonoBehaviour {
     private KeyCode jump = KeyCode.Space;
 
     private bool canJump = false;
+    private bool falling = false;
     private Rigidbody2D rb;
 
     public float horizontalAcceleration;
@@ -87,7 +88,20 @@ public class Player_controller : MonoBehaviour {
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             //rb.AddForce(new Vector2(0, jumpSpeed) * Time.deltaTime * 1000);
+            animator.SetBool("jumping", true);
+            falling = false;
         }
+        else if(!canJump && rb.velocity.y < 0)
+        {
+            animator.SetBool("falling", true);
+            animator.SetBool("jumping", false);
+        }
+        else if (canJump)
+        {
+            animator.SetBool("falling", false);
+        }
+
+        
 
     }
 
