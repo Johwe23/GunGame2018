@@ -115,7 +115,7 @@ public class Player_controller : MonoBehaviour {
 
         if (Input.GetKeyDown(Down))
         {
-            rb.AddForce(Vector2.down * 1000);
+            rb.AddForce(Vector2.down * 500);
         }
 
     }
