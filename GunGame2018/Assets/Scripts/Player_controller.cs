@@ -8,6 +8,7 @@ public class Player_controller : MonoBehaviour {
     private KeyCode right = KeyCode.D;
     private KeyCode left = KeyCode.A;
     private KeyCode jump = KeyCode.Space;
+	private KeyCode run = KeyCode.LeftShift;
 
     private bool canJump = false;
     private bool falling = false;
@@ -16,6 +17,8 @@ public class Player_controller : MonoBehaviour {
     public float horizontalAcceleration;
     public float horizontalRetardation;
     public float maxHorizontalSpeed;
+	public float maxHorizontalRunSpeed;
+	private float currentMaxHorizontalSpeed;
     public float minHorizontalSpeed;
     public float minRunSpeed;
     public float jumpSpeed;
@@ -44,12 +47,19 @@ public class Player_controller : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (Input.GetKey(right) && rb.velocity.x < maxHorizontalSpeed)
+		if (Input.GetKey (run)) {
+			currentMaxHorizontalSpeed = maxHorizontalRunSpeed;
+		} else
+		{ 
+			currentMaxHorizontalSpeed = maxHorizontalSpeed;
+		}
+
+        if (Input.GetKey(right) && rb.velocity.x < currentMaxHorizontalSpeed)
         {
             rb.AddForce(new Vector2(horizontalAcceleration, 0));
             facingRight = true;
         }
-        else if (Input.GetKey(left) && rb.velocity.x > -maxHorizontalSpeed)
+		else if (Input.GetKey(left) && rb.velocity.x > -currentMaxHorizontalSpeed)
         {
             rb.AddForce(new Vector2(-horizontalAcceleration, 0));
             facingRight = false;
