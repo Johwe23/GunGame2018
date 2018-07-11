@@ -8,7 +8,9 @@ public class Player_controller : MonoBehaviour {
     private KeyCode right = KeyCode.D;
     private KeyCode left = KeyCode.A;
     private KeyCode jump = KeyCode.Space;
-	private KeyCode run = KeyCode.LeftShift;
+    private KeyCode jump2 = KeyCode.W;
+    private KeyCode Down = KeyCode.S;
+    private KeyCode run = KeyCode.LeftShift;
 
     private bool canJump = false;
     private bool falling = false;
@@ -94,7 +96,7 @@ public class Player_controller : MonoBehaviour {
         
 
 
-        if (Input.GetKeyDown(jump) && canJump)
+        if ((Input.GetKeyDown(jump) || Input.GetKeyDown(jump2)) && canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             //rb.AddForce(new Vector2(0, jumpSpeed) * Time.deltaTime * 1000);
@@ -111,7 +113,10 @@ public class Player_controller : MonoBehaviour {
             animator.SetBool("falling", false);
         }
 
-        
+        if (Input.GetKeyDown(Down))
+        {
+            rb.AddForce(Vector2.down * 500);
+        }
 
     }
 
