@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1029732770392856}
-  m_LocalRotation: {x: 0, y: 0, z: -0.53805804, w: -0.8429078}
-  m_LocalPosition: {x: 80.08143, y: -23.165266, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.61767703, w: -0.78643185}
+  m_LocalPosition: {x: 80.07818, y: -23.258858, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bc28b01a22a5042a0de1e8d303441c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
   lifeTime: 5
 --- !u!212 &212195544608917396
 SpriteRenderer:
