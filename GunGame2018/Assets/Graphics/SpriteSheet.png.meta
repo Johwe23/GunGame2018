@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1de2376c7ded9fc478e11de969d0501f
-timeCreated: 1531312736
+timeCreated: 1531332028
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -24,6 +24,10 @@ TextureImporter:
     21300034: Player_fall
     21300036: SpriteSheet_1
     21300038: Big_wood_box
+    21300040: Org_idle
+    21300042: Org_hand
+    21300044: Org_gun
+    21300046: Org_bullet
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -346,6 +350,58 @@ TextureImporter:
         height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Org_idle
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 309
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Org_hand
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 214
+        width: 47
+        height: 42
+      alignment: 9
+      pivot: {x: 0.52783984, y: 0.47923025}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Org_gun
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 198
+        width: 82
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4981868, y: 0.22436905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Org_bullet
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 210
+        width: 41
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5096049, y: 0.45811787}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

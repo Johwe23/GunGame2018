@@ -56,7 +56,7 @@ MonoBehaviour:
     type: 2}
   recoil: 100
   bulletsPerRound: 10
-  minTimeBetweenBullets: 2
+  minTimeBetweenBullets: 0.3
 --- !u!212 &212476906097084352
 SpriteRenderer:
   m_ObjectHideFlags: 1

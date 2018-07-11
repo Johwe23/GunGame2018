@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gun
+  - Hand
+  - Enemy_bullet
+  - Player_bullet
   layers:
   - Default
   - TransparentFX
@@ -16,11 +19,11 @@ TagManager:
   - 
   - Player
   - Ground
-  - Bullets
+  - Player_Bullets
   - Guns
   - pickUps
-  - 
-  - 
+  - Enemies
+  - Enemy_Bullets
   - 
   - 
   - 

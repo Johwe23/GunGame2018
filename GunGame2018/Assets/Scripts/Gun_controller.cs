@@ -28,6 +28,7 @@ public class Gun_controller : MonoBehaviour {
             Vector3 rotation = hand.getShoulder().getRotation();
             prefabBullet.transform.eulerAngles = rotation - new Vector3(0, 0, -90);
             prefabBullet.transform.position = transform.position;
+            prefabBullet.gameObject.layer = LayerMask.NameToLayer("Player_Bullets");
             Instantiate(prefabBullet);
 
             var recoilDir = Quaternion.AngleAxis(rotation.z, Vector3.forward) * Vector3.right;
