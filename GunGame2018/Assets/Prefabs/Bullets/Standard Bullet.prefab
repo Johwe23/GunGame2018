@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61663013338281964}
   - component: {fileID: 50154231295381264}
   - component: {fileID: 114438443746999648}
-  m_Layer: 14
+  m_Layer: 10
   m_Name: Standard Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1852612320315266}
-  m_LocalRotation: {x: 0, y: 0, z: -0.6702075, w: -0.7421738}
-  m_LocalPosition: {x: 77.44815, y: -23.642973, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7266197, w: -0.6870399}
+  m_LocalPosition: {x: 72.84125, y: -23.368786, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,8 +88,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bc28b01a22a5042a0de1e8d303441c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 25
+  speed: 20
+  lifeTime: 5
 --- !u!212 &212805923858902682
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -121,7 +121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300046, guid: 1de2376c7ded9fc478e11de969d0501f, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 1de2376c7ded9fc478e11de969d0501f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -751,7 +751,7 @@ MonoBehaviour:
   maxHorizontalRunSpeed: 10
   minHorizontalSpeed: 0.1
   minRunSpeed: 1
-  jumpSpeed: 18
+  jumpSpeed: 8
   animationFactor: 0.6
   groundCheck: {fileID: 1265257155}
   groundCheckRadius: 0.1
@@ -820,10 +820,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2.5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -926,6 +926,12 @@ Prefab:
       propertyPath: recoil
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 114810787963736780, guid: c7385a5f3cad25245b4cf4568a63ac75,
+        type: 2}
+      propertyPath: prefabBullet
+      value: 
+      objectReference: {fileID: 1852612320315266, guid: 262391d04df86af458875022e6ae7f45,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7385a5f3cad25245b4cf4568a63ac75, type: 2}
   m_IsPrefabParent: 0
