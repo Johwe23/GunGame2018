@@ -19,6 +19,8 @@ public class Gun_controller : MonoBehaviour {
     void Start () {
         hand = GetComponentInParent<Hand_controller>();
         bullets = bulletsPerRound;
+
+        writeBulletsOnUI();
 	}
 	
 	// Update is called once per frame
@@ -44,7 +46,7 @@ public class Gun_controller : MonoBehaviour {
 
     private void writeBulletsOnUI()
     {
-        GameObject.Find("Bullets_count").GetComponent<Text>().text = "Bullets :" + bullets;
+        GameObject.Find("Bullets_count").GetComponent<Text>().text = "Bullets: " + bullets;
     }
 
     public void reload()
