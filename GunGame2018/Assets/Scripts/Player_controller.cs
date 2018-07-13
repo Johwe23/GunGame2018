@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_controller : MonoBehaviour
-{
+public class Player_controller : MonoBehaviour {
 
 
     private KeyCode right = KeyCode.D;
@@ -21,8 +19,8 @@ public class Player_controller : MonoBehaviour
     public float horizontalAcceleration;
     public float horizontalRetardation;
     public float maxHorizontalSpeed;
-    public float maxHorizontalRunSpeed;
-    private float currentMaxHorizontalSpeed;
+	public float maxHorizontalRunSpeed;
+	private float currentMaxHorizontalSpeed;
     public float minHorizontalSpeed;
     public float minRunSpeed;
     public float jumpSpeed;
@@ -37,8 +35,7 @@ public class Player_controller : MonoBehaviour
     private Animator animator;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         scale = transform.localScale.x;
@@ -50,24 +47,21 @@ public class Player_controller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
 
-        if (Input.GetKey(run))
-        {
-            currentMaxHorizontalSpeed = maxHorizontalRunSpeed;
-        }
-        else
-        {
-            currentMaxHorizontalSpeed = maxHorizontalSpeed;
-        }
+		if (Input.GetKey (run)) {
+			currentMaxHorizontalSpeed = maxHorizontalRunSpeed;
+		} else
+		{ 
+			currentMaxHorizontalSpeed = maxHorizontalSpeed;
+		}
 
         if (Input.GetKey(right) && rb.velocity.x < currentMaxHorizontalSpeed)
         {
             rb.AddForce(new Vector2(horizontalAcceleration, 0));
             facingRight = true;
         }
-        else if (Input.GetKey(left) && rb.velocity.x > -currentMaxHorizontalSpeed)
+		else if (Input.GetKey(left) && rb.velocity.x > -currentMaxHorizontalSpeed)
         {
             rb.AddForce(new Vector2(-horizontalAcceleration, 0));
             facingRight = false;
@@ -80,8 +74,8 @@ public class Player_controller : MonoBehaviour
         {
             rb.AddForce(new Vector2(-Mathf.Sign(rb.velocity.x) * horizontalRetardation, 0));
         }
-
-        if (Mathf.Abs(rb.velocity.x) < minRunSpeed)
+            
+        if(Mathf.Abs(rb.velocity.x) < minRunSpeed)
         {
             animator.SetBool("moving", false);
         }
@@ -91,7 +85,7 @@ public class Player_controller : MonoBehaviour
             animator.SetFloat("movingSpeed", Mathf.Abs(rb.velocity.x) * animationFactor);
         }
 
-        if (!facingRight)
+        if(!facingRight)
         {
             transform.localScale = new Vector3(scale, scale, 1);
         }
@@ -99,7 +93,7 @@ public class Player_controller : MonoBehaviour
         {
             transform.localScale = new Vector3(-scale, scale, 1);
         }
-
+        
 
 
         if ((Input.GetKeyDown(jump) || Input.GetKeyDown(jump2)) && canJump)
@@ -109,7 +103,7 @@ public class Player_controller : MonoBehaviour
             animator.SetBool("jumping", true);
             falling = false;
         }
-        else if (!canJump && rb.velocity.y < 0)
+        else if(!canJump && rb.velocity.y < 0)
         {
             animator.SetBool("falling", true);
             animator.SetBool("jumping", false);
@@ -123,5 +117,7 @@ public class Player_controller : MonoBehaviour
         {
             rb.AddForce(Vector2.down * 500);
         }
+
     }
+
 }
