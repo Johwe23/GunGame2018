@@ -3,11 +3,9 @@ using UnityEngine.UI;
 
 public class Time_controller : MonoBehaviour
 {
-    [SerializeField]
-    private Text uiText;
 
     [SerializeField]
-    private float mainTimer;
+    private float time;
 
     private float timer;
     private bool canCount = true;
@@ -17,7 +15,7 @@ public class Time_controller : MonoBehaviour
 
     void Start()
     {
-        timer = mainTimer;
+        timer = time;
     }
 
     void Update()
@@ -25,12 +23,13 @@ public class Time_controller : MonoBehaviour
         if (timer >= 0.0f && canCount)
         {
             timer -= Time.deltaTime;
-            uiText.text = timer.ToString("F");
+            gameObject.GetComponent<Text>().text = "Time Left: " + timer;
+            Debug.Log(timer + "   " + Time.deltaTime);
         }
         else if (timer <= 0.0f && !stop)
         {
             canCount = false;
-            uiText.text = "0";
+            GetComponent<Text>().text = "Time Left: " + 0;
             timer = 0.0f;
             stop = true;
         }
