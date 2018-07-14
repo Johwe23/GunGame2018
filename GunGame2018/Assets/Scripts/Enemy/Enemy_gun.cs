@@ -43,4 +43,10 @@ public class Enemy_gun : MonoBehaviour {
         this.idle = idle;
     }
 
+    void OnApplicationQuit()
+    {
+        bullet.transform.position = new Vector3(0, 0, 0);
+    }
+
+
 }

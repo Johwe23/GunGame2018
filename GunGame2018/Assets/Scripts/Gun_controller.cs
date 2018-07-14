@@ -54,4 +54,9 @@ public class Gun_controller : MonoBehaviour {
         bullets = bulletsPerRound;
         writeBulletsOnUI();
     }
+
+    void OnApplicationQuit()
+    {
+        prefabBullet.transform.position = new Vector3(0, 0, 0);
+    }
 }
