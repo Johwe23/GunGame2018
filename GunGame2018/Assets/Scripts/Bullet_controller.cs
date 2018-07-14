@@ -6,6 +6,7 @@ public class Bullet_controller : MonoBehaviour {
 
     public float speed;
     public float lifeTime;
+    public float damage;
 
     // Use this for initialization
     void Start () {
@@ -25,5 +26,9 @@ public class Bullet_controller : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
+        if(other.gameObject.GetComponent<Health_controller>() != null)
+        {
+            other.gameObject.GetComponent<Health_controller>().hurt(damage);
+        }
     }
 }

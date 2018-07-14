@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a4a269c96de7049a85c3a3bc658a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabBullet: {fileID: 1029732770392856, guid: c05de275f61a6164a8e060c582c2b0ef,
+  prefabBullet: {fileID: 1852612320315266, guid: 262391d04df86af458875022e6ae7f45,
     type: 2}
   recoil: 100
   bulletsPerRound: 10

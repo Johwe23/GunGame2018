@@ -14,8 +14,9 @@ public class Enemy_head_controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        lookDirection = gameObject.GetComponentInParent<Enemy_shooter>().getDirection();
-        if(lookDirection.z > 220 && lookDirection.z < 270)
+        lookDirection = transform.GetComponentInParent<Transform>().GetComponentInParent<Enemy_shooter>().getDirection();
+
+        if (lookDirection.z > 220 && lookDirection.z < 270)
         {
             lookDirection = new Vector3(0, 0, 220);
         }
@@ -25,6 +26,6 @@ public class Enemy_head_controller : MonoBehaviour {
         }
         transform.eulerAngles = lookDirection + new Vector3(0, 0, 90 + -Mathf.Sign(transform.lossyScale.x) * 90);
 
-        Debug.Log(lookDirection);
+        //Debug.Log(lookDirection);
     }
 }

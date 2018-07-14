@@ -12,7 +12,7 @@ public class Enemy_shooter : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player = GameObject.Find("Player");
-        hand = transform.GetChild(0).gameObject;
+        hand = transform.GetChild(0).transform.GetChild(0).gameObject;
         gun = hand.transform.GetChild(0).GetComponent<Enemy_gun>();
 
     }
@@ -23,12 +23,12 @@ public class Enemy_shooter : MonoBehaviour {
 
         if(player.transform.position.x > transform.position.x)
         {
-            transform.localScale = new Vector3(-0.5f, 0.5f, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
             hand.transform.eulerAngles = shootDirection + new Vector3(0, 0, 180);
             gun.setRotation(shootDirection);
         } else
         {
-            transform.localScale = new Vector3(0.5f, 0.5f, 1);
+            transform.localScale = new Vector3(1, 1, 1);
             hand.transform.eulerAngles = shootDirection;
             gun.setRotation(shootDirection);
         }
