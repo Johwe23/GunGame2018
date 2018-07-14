@@ -22,8 +22,8 @@ public class Enemy_shootMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player = GameObject.Find("Player");
-        GameObject hand = transform.GetChild(0).transform.GetChild(0).gameObject;
-        gun = hand.transform.GetChild(0).GetComponent<Enemy_gun>();
+        GameObject hand = Utils.getGrandChild(gameObject, 0, "Hand");
+        gun = Utils.getComponentInChildWithTag<Enemy_gun>(hand, "Gun");
 
         animator = GetComponentInChildren<Animator>();
     }

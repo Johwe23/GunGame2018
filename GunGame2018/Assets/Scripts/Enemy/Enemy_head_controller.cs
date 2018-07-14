@@ -12,9 +12,9 @@ public class Enemy_head_controller : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 
-        lookDirection = transform.GetComponentInParent<Transform>().GetComponentInParent<Enemy_shooter>().getDirection();
+        lookDirection = Utils.getComponentInGrandParent<Enemy_shooter>(gameObject).getDirection();
 
         if (lookDirection.z > 220 && lookDirection.z < 270)
         {
