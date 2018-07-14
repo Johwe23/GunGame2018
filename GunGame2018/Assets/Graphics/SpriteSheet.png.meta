@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1de2376c7ded9fc478e11de969d0501f
-timeCreated: 1531390921
+timeCreated: 1531593717
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -31,6 +31,7 @@ TextureImporter:
     21300048: Org_head
     21300050: Org_walk1
     21300052: Org_walk2
+    21300054: Coin_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -442,6 +443,19 @@ TextureImporter:
         y: 9
         width: 300
         height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Coin_1
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 718
+        width: 116
+        height: 103
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

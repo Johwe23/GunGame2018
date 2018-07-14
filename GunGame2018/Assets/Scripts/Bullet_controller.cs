@@ -31,4 +31,5 @@ public class Bullet_controller : MonoBehaviour {
             other.gameObject.GetComponent<Health_controller>().hurt(damage);
         }
     }
+
 }
