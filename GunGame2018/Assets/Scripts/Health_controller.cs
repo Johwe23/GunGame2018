@@ -21,7 +21,6 @@ public class Health_controller : MonoBehaviour {
     {
         
         currentHealth -= damage;
-        Debug.Log("Hurt " + currentHealth);
         if (currentHealth <= 0)
         {
             if (gameObject.tag == "Enemy")
