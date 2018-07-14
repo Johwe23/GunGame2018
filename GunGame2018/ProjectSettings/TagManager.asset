@@ -8,6 +8,7 @@ TagManager:
   - Hand
   - Enemy_bullet
   - Player_bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
