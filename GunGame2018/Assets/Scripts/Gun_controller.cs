@@ -47,7 +47,6 @@ public class Gun_controller : MonoBehaviour {
     private void writeBulletsOnUI()
     {
         GameObject.Find("Bullets_count").GetComponent<Text>().text = "Bullets: " + bullets;
-        
     }
 
     public void reload()
