@@ -20,10 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4738511454312044}
   - component: {fileID: 212291917339172958}
-  - component: {fileID: 50124684477409572}
   - component: {fileID: 61000942881810434}
   m_Layer: 9
-  m_Name: Wood_box 1
+  m_Name: Wood_box_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,26 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50124684477409572
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1230760105803250}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &61000942881810434
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -107,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: 1de2376c7ded9fc478e11de969d0501f, type: 3}
+  m_Sprite: {fileID: 21300036, guid: 1de2376c7ded9fc478e11de969d0501f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
