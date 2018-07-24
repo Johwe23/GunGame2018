@@ -31,8 +31,6 @@ public class Enemy_shootMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Transform transform = GetComponentInParent<Transform>();
-
         if (player.transform.position.x > transform.position.x)
         {
             currentSpeed = speed;
@@ -42,11 +40,7 @@ public class Enemy_shootMovement : MonoBehaviour {
             currentSpeed = -speed;
         }
 
-        if (!GetComponent<Enemy_die>().isDead())
-        {
-            move();
-        }
-                
+        move();                
     }
 
     void move()
