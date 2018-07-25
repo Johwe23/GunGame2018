@@ -19,6 +19,7 @@ public class Ammo_controller : MonoBehaviour {
         if (other.gameObject.Equals(GameObject.FindGameObjectWithTag("Player")))
         {
             GameObject.FindGameObjectWithTag("Gun").GetComponent<Gun_controller>().reload();
+            
             Destroy(gameObject);
         }
     }

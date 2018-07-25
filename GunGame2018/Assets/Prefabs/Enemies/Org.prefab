@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114005146343464378}
   m_Layer: 13
   m_Name: Org_gun
-  m_TagString: Enemy
+  m_TagString: Enemy_gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 50761447373883114}
   - component: {fileID: 114315476991967074}
   - component: {fileID: 114254280424414322}
+  - component: {fileID: 114236821348835658}
   m_Layer: 13
   m_Name: Org
   m_TagString: Enemy
@@ -134,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1851089556975864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.21, y: -23.575, z: 0}
+  m_LocalPosition: {x: 98.8, y: -23.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4333314448507116}
@@ -216,7 +217,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114005146343464378
@@ -228,10 +229,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afb2c987dda19ec49816709de07ef654, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   bullet: {fileID: 1359201000119494, guid: 3439cfef993b1e84392871d8e8a6e4f5, type: 2}
   minTimeBetweenBullets: 3
+--- !u!114 &114236821348835658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851089556975864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6eecd4e6a691dd43b929848c82f0d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114254280424414322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,8 +253,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e1b95f005861de4c9c8c4629737198b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   deathTime: 10
 --- !u!114 &114315476991967074
 MonoBehaviour:
@@ -253,8 +265,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91ef31d1784b0c0428ae9a6c108bec31, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   health: 100
 --- !u!114 &114409646454165588
 MonoBehaviour:
@@ -265,8 +277,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67ea796e3f9a8344f82a7a20f1c86fd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114472443301270430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -276,8 +288,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b95cfe53a0bcc5744b4b812c67cbd3d9, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 2
   moveBackDistance: 5
   moveForwardDistance: 7
@@ -292,8 +304,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec35c954dfd282748b2d29f291869fda, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212131516569772770
 SpriteRenderer:
   m_ObjectHideFlags: 1

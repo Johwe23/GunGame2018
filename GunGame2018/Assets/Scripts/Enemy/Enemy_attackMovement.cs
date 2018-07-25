@@ -28,6 +28,8 @@ public class Enemy_attackMovement : MonoBehaviour {
         animator = GetComponentInChildren<Animator>();
 
         rb = GetComponent<Rigidbody2D>();
+
+        speed += Random.Range(-1f, 1f);
     }
 	
 	// Update is called once per frame
