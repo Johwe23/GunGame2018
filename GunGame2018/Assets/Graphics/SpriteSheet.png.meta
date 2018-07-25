@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1de2376c7ded9fc478e11de969d0501f
-timeCreated: 1532458352
+timeCreated: 1532526413
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,6 +35,15 @@ TextureImporter:
     21300056: Parasite_idle
     21300058: Big_wood_box_gray
     21300060: Big_wood_box_black
+    21300062: Coin_2
+    21300064: Coin_3
+    21300066: Coin_4
+    21300068: Parasite_walk_3
+    21300070: Parasite_walk_2
+    21300072: Parasite_walk_1
+    21300074: Parasite_jump
+    21300076: Parasite_dead
+    21300078: Parasite_grab
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -429,10 +438,10 @@ TextureImporter:
       name: Coin_1
       rect:
         serializedVersion: 2
-        x: 1984
-        y: 1218
-        width: 116
-        height: 103
+        x: 1701
+        y: 1251
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,6 +509,123 @@ TextureImporter:
         height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Coin_2
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1137
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Coin_3
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 1254
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Coin_4
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 1146
+        width: 59
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Parasite_walk_3
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1700
+        width: 400
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Parasite_walk_2
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1400
+        width: 400
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Parasite_walk_1
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1100
+        width: 400
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Parasite_jump
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1373
+        width: 400
+        height: 327
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5453112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Parasite_dead
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 800
+        width: 400
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Parasite_grab
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 379
+        width: 400
+        height: 421
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6552923}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

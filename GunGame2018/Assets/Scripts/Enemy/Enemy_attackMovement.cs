@@ -55,6 +55,8 @@ public class Enemy_attackMovement : MonoBehaviour {
             currentSpeed = -speed;
         }
 
+        animator.SetBool("moving", true);
+
         if ((player.transform.position - transform.position).magnitude > idleDistance)
         {
             animator.SetBool("moving", false);
@@ -71,10 +73,17 @@ public class Enemy_attackMovement : MonoBehaviour {
             {
                 rb.velocity = Vector3.up * jumpSpeed;
                 jumped = true;
+                animator.SetBool("jumping", true);
             }
+            else
+            {
+                animator.SetBool("jumping", false);
+            }
+
             if((player.transform.position - transform.position).magnitude < attachDistance)
             {
                 grab();
+                animator.SetBool("grabing", true);
             }
         }
     }
