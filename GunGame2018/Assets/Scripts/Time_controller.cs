@@ -23,12 +23,12 @@ public class Time_controller : MonoBehaviour
         if (timer >= 0.0f && canCount)
         {
             timer -= Time.deltaTime;
-            gameObject.GetComponent<Text>().text = "Time Left: " + Mathf.Floor(timer * 100) / 100;
+            gameObject.GetComponent<Text>().text = "" + Mathf.Floor(timer * 100) / 100;
         }
         else if (timer <= 0.0f && !stop)
         {
             canCount = false;
-            GetComponent<Text>().text = "Time Left: " + 0;
+            GetComponent<Text>().text = "" + 0;
             timer = 0.0f;
             stop = true;
         }

@@ -12,5 +12,6 @@ public class Org_utils : Enemy_utils {
         transform.GetComponentInChildren<Transform>().GetComponentInChildren<Enemy_head_controller>().enabled = false;
         transform.GetComponentInChildren<Transform>().GetComponentInChildren<Transform>().GetComponentInChildren<Enemy_gun>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().isKinematic = true;
     }
 }

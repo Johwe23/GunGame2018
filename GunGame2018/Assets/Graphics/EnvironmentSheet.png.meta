@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 778c94e15c596444389646bafe8fa685
-timeCreated: 1532628446
+timeCreated: 1532632800
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,6 +22,9 @@ TextureImporter:
     21300030: Flower_4
     21300032: Flower_5
     21300034: Flower_6
+    21300036: Background_1
+    21300038: UI_Small
+    21300040: UI_big
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -324,6 +327,45 @@ TextureImporter:
         y: 1565
         width: 64
         height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Background_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1550
+        height: 878
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_Small
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1118
+        width: 163
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_big
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1118
+        width: 326
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

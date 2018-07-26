@@ -20,6 +20,6 @@ public class Coin_manager : MonoBehaviour {
     public void collectCoin()
     {
         coins++;
-        GameObject.Find("Coins").GetComponent<Text>().text = "Coins: " + coins;
+        GameObject.Find("Coins").GetComponent<Text>().text = "" + coins;
     }
 }
