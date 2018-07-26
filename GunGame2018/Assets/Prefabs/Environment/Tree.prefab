@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212958185822970950}
   - component: {fileID: 61107939588290998}
   - component: {fileID: 61786322638729880}
+  - component: {fileID: 61933870660282132}
   m_Layer: 9
   m_Name: Tree
   m_TagString: Untagged
@@ -35,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082672833142742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.06193, y: -21.63, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 106.06193, y: -21.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,9 +54,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.059188843, y: 1.1866226}
+  m_Offset: {x: -1.4446411, y: 1.1866226}
   serializedVersion: 2
-  m_Size: {x: 9.328125, y: 2.1154752}
+  m_Size: {x: 6.320483, y: 2.1154752}
 --- !u!61 &61786322638729880
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -70,6 +71,20 @@ BoxCollider2D:
   m_Offset: {x: -3.6788788, y: -1.2110043}
   serializedVersion: 2
   m_Size: {x: 1.2447257, y: 2.6779938}
+--- !u!61 &61933870660282132
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082672833142742}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 3.0649338, y: 1.5467834}
+  serializedVersion: 2
+  m_Size: {x: 2.6980681, y: 0.9752331}
 --- !u!212 &212958185822970950
 SpriteRenderer:
   m_ObjectHideFlags: 1

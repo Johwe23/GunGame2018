@@ -25,7 +25,7 @@ public class Enemy_shootMovement : MonoBehaviour {
         GameObject hand = Utils.getGrandChild(gameObject, 0, "Hand");
         gun = Utils.getComponentInChildWithTag<Enemy_gun>(hand, "Enemy_gun");
 
-        speed += Random.Range(-1, 1);
+        speed += Random.Range(-0.5f, 0.5f);
 
         animator = GetComponentInChildren<Animator>();
     }

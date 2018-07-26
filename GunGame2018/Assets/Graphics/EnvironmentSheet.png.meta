@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 778c94e15c596444389646bafe8fa685
-timeCreated: 1532538480
+timeCreated: 1532628446
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,6 +14,14 @@ TextureImporter:
     21300014: Corner
     21300016: Bush
     21300018: Tree
+    21300020: Tall_grass_L2
+    21300022: Tall_grass_L1
+    21300024: Flower_1
+    21300026: Flower_2
+    21300028: Flower_3
+    21300030: Flower_4
+    21300032: Flower_5
+    21300034: Flower_6
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -212,6 +220,110 @@ TextureImporter:
         y: 889
         width: 963
         height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tall_grass_L2
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1283
+        width: 244
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tall_grass_L1
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1283
+        width: 675
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flower_1
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 1562
+        width: 135
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flower_2
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1565
+        width: 64
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flower_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1567
+        width: 160
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flower_4
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1563
+        width: 147
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flower_5
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 1563
+        width: 57
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flower_6
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 1565
+        width: 64
+        height: 206
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
