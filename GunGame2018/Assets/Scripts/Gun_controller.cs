@@ -58,5 +58,6 @@ public class Gun_controller : MonoBehaviour {
     void OnApplicationQuit()
     {
         prefabBullet.transform.position = new Vector3(0, 0, 0);
+        prefabBullet.transform.localRotation = new Quaternion(0, 0, 0, 0);
     }
 }

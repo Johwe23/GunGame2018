@@ -46,6 +46,7 @@ public class Enemy_gun : MonoBehaviour {
     void OnApplicationQuit()
     {
         bullet.transform.position = new Vector3(0, 0, 0);
+        bullet.transform.localRotation = new Quaternion(0, 0, 0, 0);
     }
 
 
