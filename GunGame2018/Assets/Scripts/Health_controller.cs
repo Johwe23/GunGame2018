@@ -7,6 +7,8 @@ public class Health_controller : MonoBehaviour {
     public float health;
     private float currentHealth;
 
+    public ParticleSystem deathParticle;
+
 	// Use this for initialization
 	void Start () {
         currentHealth = health;
@@ -17,7 +19,7 @@ public class Health_controller : MonoBehaviour {
 		
 	}
 
-    public void hurt (float damage)
+    public void hurt (float damage, Bullet_controller bullet)
     {
         
         currentHealth -= damage;
@@ -29,6 +31,16 @@ public class Health_controller : MonoBehaviour {
             }
         }
 
-        
+        deathParticle.transform.position = bullet.transform.position;
+        deathParticle.transform.eulerAngles = new Vector3(0, -42, bullet.transform.eulerAngles.z - 180);
+        Instantiate(deathParticle);
     }
+
+    void OnApplicationQuit()
+    {
+        deathParticle.transform.position = new Vector3(0, 0, 0);
+        deathParticle.transform.rotation = new Quaternion(0, -42, 0, 1);
+    }
+
+
 }

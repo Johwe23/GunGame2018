@@ -25,11 +25,12 @@ public class Bullet_controller : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(gameObject);
+        
         if(other.gameObject.GetComponent<Health_controller>() != null)
         {
-            other.gameObject.GetComponent<Health_controller>().hurt(damage);
+            other.gameObject.GetComponent<Health_controller>().hurt(damage, this);
         }
+        Destroy(gameObject);
     }
 
 }
