@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1de2376c7ded9fc478e11de969d0501f
-timeCreated: 1532526413
+timeCreated: 1533296053
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -44,6 +44,8 @@ TextureImporter:
     21300074: Parasite_jump
     21300076: Parasite_dead
     21300078: Parasite_grab
+    21300080: Player_healthbar
+    21300082: Player_health_meter
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -626,6 +628,32 @@ TextureImporter:
         height: 421
       alignment: 9
       pivot: {x: 0.5, y: 0.6552923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_healthbar
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 427
+        width: 386
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_health_meter
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

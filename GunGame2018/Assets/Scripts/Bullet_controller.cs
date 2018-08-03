@@ -28,7 +28,7 @@ public class Bullet_controller : MonoBehaviour {
         
         if(other.gameObject.GetComponent<Health_controller>() != null)
         {
-            other.gameObject.GetComponent<Health_controller>().hurt(damage, this);
+            other.gameObject.GetComponent<Health_controller>().hurt(damage, gameObject);
         }
         Destroy(gameObject);
     }

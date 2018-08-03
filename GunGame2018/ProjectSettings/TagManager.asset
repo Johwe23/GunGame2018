@@ -10,6 +10,7 @@ TagManager:
   - Player_bullet
   - Enemy
   - Enemy_gun
+  - Healthbar
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - pickUps
   - Enemies
   - Enemy_Bullets
-  - 
+  - Healthbars
   - 
   - 
   - 

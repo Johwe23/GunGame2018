@@ -13,6 +13,7 @@ public class Enemy_attackMovement : MonoBehaviour {
     public float jumpSpeed;
     public float dieSpeed;
     private bool attached;
+    public float damagePerSecond;
 
     public float idleDistance;
     public float jumpDistance;
@@ -40,7 +41,7 @@ public class Enemy_attackMovement : MonoBehaviour {
         }
         else
         {
-
+            player.GetComponent<Health_controller>().hurt(damagePerSecond * Time.deltaTime, gameObject);
         }
         
     }
