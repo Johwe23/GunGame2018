@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Enemy_gun
   - Healthbar
+  - Marker
   layers:
   - Default
   - TransparentFX
