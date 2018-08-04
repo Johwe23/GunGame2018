@@ -39,7 +39,7 @@ public class Player_controller : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         scale = transform.localScale.x;
     }
 

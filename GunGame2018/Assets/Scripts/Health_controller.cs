@@ -8,6 +8,9 @@ public class Health_controller : MonoBehaviour {
 
     public float health;
     private float currentHealth;
+    private bool dead = false;
+    private float deathCount;
+    private float deathResetSeconds = 3;
 
     public ParticleSystem deathParticle;
     public Slider healthBar;
@@ -20,7 +23,18 @@ public class Health_controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         healthBar.transform.localScale = new Vector3(Mathf.Sign(transform.localScale.x), healthBar.transform.localScale.y, 1);
-	}
+
+        if (gameObject.tag == "Player" && dead)
+        {
+            deathCount += Time.deltaTime;
+
+            if(deathCount > deathResetSeconds)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+
+    }
 
     public void hurt (float damage, GameObject cause)
     {
@@ -37,11 +51,10 @@ public class Health_controller : MonoBehaviour {
             }
             else if(gameObject.tag == "Player")
             {
-                gameObject.GetComponent<Animator>().SetBool("dead", true);
-                Destroy(gameObject, 3);
-                Wait();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                gameObject.GetComponentInChildren<Animator>().SetBool("dead", true);
+                gameObject.GetComponent<Player_controller>().enabled = false;
             }
+            dead = true;
         }
 
         deathParticle.transform.position = cause.transform.position;
@@ -49,11 +62,6 @@ public class Health_controller : MonoBehaviour {
         Instantiate(deathParticle);
 
         
-    }
-
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(3.0f);
     }
 
     private void updateHealthBar()
