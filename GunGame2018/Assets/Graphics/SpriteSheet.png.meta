@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1de2376c7ded9fc478e11de969d0501f
-timeCreated: 1533296053
+timeCreated: 1533370864
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -46,6 +46,10 @@ TextureImporter:
     21300078: Parasite_grab
     21300080: Player_healthbar
     21300082: Player_health_meter
+    21300084: Player_die_1
+    21300086: Player_die_2
+    21300088: Player_hat
+    21300090: Health_pack
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -652,6 +656,58 @@ TextureImporter:
         y: 436
         width: 40
         height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_die_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 400
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_die_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 2500
+        width: 398
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_hat
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 2354
+        width: 280
+        height: 111
+      alignment: 9
+      pivot: {x: 0.61837924, y: 0.5946826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Health_pack
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1707
+        width: 69
+        height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

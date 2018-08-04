@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health_controller : MonoBehaviour {
 
@@ -34,6 +35,13 @@ public class Health_controller : MonoBehaviour {
                 gameObject.GetComponent<Enemy_die>().die();
                 die();
             }
+            else if(gameObject.tag == "Player")
+            {
+                gameObject.GetComponent<Animator>().SetBool("dead", true);
+                Destroy(gameObject, 3);
+                Wait();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
 
         deathParticle.transform.position = cause.transform.position;
@@ -41,6 +49,11 @@ public class Health_controller : MonoBehaviour {
         Instantiate(deathParticle);
 
         
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(3.0f);
     }
 
     private void updateHealthBar()
@@ -51,6 +64,12 @@ public class Health_controller : MonoBehaviour {
     public void die()
     {
         
+    }
+
+    public void restoreHealth()
+    {
+        currentHealth = health;
+        updateHealthBar();
     }
 
     void OnApplicationQuit()
