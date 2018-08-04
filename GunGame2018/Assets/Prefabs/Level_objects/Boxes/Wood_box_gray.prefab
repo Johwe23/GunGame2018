@@ -69,7 +69,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1230760105803250}
   m_Enabled: 1
-  m_Density: 1
+  m_Density: 5
   m_Material: {fileID: 6200000, guid: fbd2d2fc861e8ab43913b6ba82605fa8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
